@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100vw;
+  height: 2000px;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+#home {
+  padding-top: 88px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  h1 {
+    color: skyblue;
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btns {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+
+  .container {
+    position: relative;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #333;
+    margin: auto;
+  }
+
+  .btn__menu {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      font-size: 16px;
+      font-weight: 700;
+      color: #333;
+      border: 1px solid #4d7f8c;
+      width: 150px;
+      height: 40px;
+      border-radius: 6px;
+      background-color: #9ad2d9;
+
+      &:hover {
+        background-color: white;
+        border: 1px solid #ffffff;
+      }
+    }
+  }
+}
+
+.arrow-up {
+  position: fixed;
+  bottom: 60px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  color: white;
+  background-color: rgb(33, 112, 231);
+  border-radius: 50%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  span {
+    font-size: 50px;
+  }
+
+  &.show {
+    opacity: 1;
+  }
+}

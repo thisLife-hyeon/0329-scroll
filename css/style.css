@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap");
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100vw;
+  height: 2000px;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+#home {
+  padding-top: 88px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.wrapper h1 {
+  color: skyblue;
+  font-size: 48px;
+}
+
+.wrapper h2 {
+  font-size: 32px;
+}
+
+.wrapper h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btns {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+.btns .container {
+  position: relative;
+  max-width: 900px;
+  padding: 20px;
+  background-color: #333;
+  margin: auto;
+}
+
+.btns .btn__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btns .btn__menu .btn {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  border: 1px solid #4d7f8c;
+  width: 150px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #9ad2d9;
+}
+
+.btns .btn__menu .btn:hover {
+  background-color: white;
+  border: 1px solid #ffffff;
+}
+
+.arrow-up {
+  position: fixed;
+  bottom: 60px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  color: white;
+  background-color: #2170e7;
+  border-radius: 50%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.arrow-up span {
+  font-size: 50px;
+}
+
+.arrow-up.show {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
