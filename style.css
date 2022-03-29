@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Noto Sans KR", sans-serif;
   width: 100vw;
-  height: 2000px;
+  height: 200rem;
 }
 
 section {
@@ -12,25 +23,25 @@ section {
 }
 
 #home {
-  padding-top: 88px;
+  padding-top: 8.8rem;
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: auto;
 }
 
 .wrapper h1 {
   color: skyblue;
-  font-size: 48px;
+  font-size: 4.8rem;
 }
 
 .wrapper h2 {
-  font-size: 32px;
+  font-size: 3.2rem;
 }
 
 .wrapper h3 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 300;
 }
 
@@ -50,9 +61,9 @@ button {
 
 .btns .container {
   position: relative;
-  max-width: 900px;
-  padding: 20px;
-  background-color: #333;
+  max-width: 90rem;
+  padding: 2rem;
+  background-color: rgba(51, 51, 51, 0.5);
   margin: auto;
 }
 
@@ -60,20 +71,25 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btns .btn__menu .btn {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #333;
-  border: 1px solid #4d7f8c;
-  width: 150px;
-  height: 40px;
-  border-radius: 6px;
-  background-color: #9ad2d9;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 0.6rem;
+  background-color: #c5efff;
 }
 
 .btns .btn__menu .btn:hover {
@@ -83,10 +99,10 @@ button {
 
 .arrow-up {
   position: fixed;
-  bottom: 60px;
-  right: 50px;
-  width: 70px;
-  height: 70px;
+  bottom: 6rem;
+  right: 5rem;
+  width: 7rem;
+  height: 7rem;
   color: white;
   background-color: #2170e7;
   border-radius: 50%;
@@ -97,10 +113,9 @@ button {
 }
 
 .arrow-up span {
-  font-size: 50px;
+  font-size: 5rem;
 }
 
 .arrow-up.show {
   opacity: 1;
 }
-/*# sourceMappingURL=style.css.map */
